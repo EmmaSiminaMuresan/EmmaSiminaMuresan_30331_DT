@@ -21,6 +21,9 @@ formCloseBtn_update.addEventListener("click", () => home.classList.remove("show"
 formOpenBtn_delete.addEventListener("click", () => home.classList.add("show"));
 formCloseBtn_delete.addEventListener("click", () => home.classList.remove("show"));
 
+
+
+
 /*
 pwShowHide.forEach((icon) => {
   icon.addEventListener("click", () => {
