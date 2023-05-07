@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rent a luxury car</title>
+    <link rel="stylesheet" href="crudpage.css" />
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="nav_logo">Luxury cars - Admin</a>
+        <ul class="buttons_items">
+          <li class="button_item">
+            <button class="button_create" id="form-open-create">CREATE</button>
+            <button class="button_read" id="form-open-read">READ</button>
+            <button class="button_update" id="form-open-update">UPDATE</button>
+            <button class="button_delete" id="form-open-delete">DELETE</button>
+        </li>
+        </ul>
+        
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home">
+      <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        
+        <!-- Create Form -->
+        <div class="form create_form">
+          <form action="#">
+            <h2>Add a new car</h2>
+
+            <div class="input_box">
+              <input type="text" id="model" placeholder="Car model" required />
+
+            </div>
+            <div class="input_box">
+              <input type="text" id="model" placeholder="Horse power" required />
+            </div>
+            <div class="input_box">
+              <input type="text" id="fuel" placeholder="Fuel" required />
+
+            </div>
+            <div class="input_box">
+              <input type="gearbox" placeholder="Gearbox" required />
+
+            </div>
+            <div class="input_box">
+              <input type="seats" placeholder="Seats" required />
+            </div>
+            <div class="input_box">
+              <input type="price" placeholder="Price" required />
+            </div>
+            
+            <button class="button">Add</button>
+
+          </form>
+        </div>
+
+         <!--Read all data--> 
+
+         <!--Update data--> 
+        <div class="form update_form">
+          <form action="#">
+            <h2>Update a car</h2>
+
+            <div class="input_box">
+              <input type="id" placeholder="ID" required />
+
+            </div>
+            <div class="input_box">
+              <input type="model" placeholder="Car model" required />
+
+            </div>
+            <div class="input_box">
+              <input type="hp" placeholder="Horse power" required />
+
+            </div>
+            <div class="input_box">
+              <input type="fuel" placeholder="Fuel" required />
+
+            </div>
+            <div class="input_box">
+              <input type="gearbox" placeholder="Gearbox" required />
+
+            </div>
+            <div class="input_box">
+              <input type="seats" placeholder="Seats" required />
+            </div>
+            <div class="input_box">
+              <input type="price" placeholder="Price" required />
+            </div>
+            
+            <button class="button">Update</button>
+
+          </form>
+        </div>
+
+         <!--Delete data-->
+        <div class="form delete_form">
+          <form action="#">
+            <h2>Delete a car</h2>
+
+            <div class="input_box">
+              <input type="id" placeholder="ID" required />
+            </div>
+            
+            <button class="button">Delete</button>
+
+          </form>
+        </div>
+      
+
+      </div>
+    </section>
+
+    <script src="crudpage.js"></script>
+  </body>
+</html>
