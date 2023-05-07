@@ -1,15 +1,27 @@
-const formOpenBtn = document.querySelector("#form-open"),
+const formOpenBtn_create = document.querySelector("#form-open-create"),
+  formOpenBtn_read = document.querySelector("#form-open-read"),
+  formOpenBtn_update = document.querySelector("#form-open-update"),
+  formOpenBtn_delete = document.querySelector("#form-open-delete"),
   home = document.querySelector(".home"),
   formContainer = document.querySelector(".form_container"),
-  formCloseBtn = document.querySelector(".form_close"),
-  signupBtn = document.querySelector("#signup"),
-  loginBtn = document.querySelector("#login"),
-  pwShowHide = document.querySelectorAll(".pw_hide");
+  formCloseBtn_create = document.querySelector(".form_close"),
+  formCloseBtn_read = document.querySelector(".form_close"),
+  formCloseBtn_update = document.querySelector(".form_close"),
+  formCloseBtn_delete = document.querySelector(".form_close");
 
-formOpenBtn.addEventListener("click", () => home.classList.add("show"));
-formCloseBtn.addEventListener("click", () => home.classList.remove("show"));
+formOpenBtn_create.addEventListener("click", () => home.classList.add("show"));
+formCloseBtn_create.addEventListener("click", () => home.classList.remove("show"));
 
+formOpenBtn_read.addEventListener("click", () => home.classList.add("show"));
+formCloseBtn_read.addEventListener("click", () => home.classList.remove("show"));
 
+formOpenBtn_update.addEventListener("click", () => home.classList.add("show"));
+formCloseBtn_update.addEventListener("click", () => home.classList.remove("show"));
+
+formOpenBtn_delete.addEventListener("click", () => home.classList.add("show"));
+formCloseBtn_delete.addEventListener("click", () => home.classList.remove("show"));
+
+/*
 pwShowHide.forEach((icon) => {
   icon.addEventListener("click", () => {
     let getPwInput = icon.parentElement.querySelector("input");
@@ -56,7 +68,7 @@ function login(){
   else{
     alert("Invalid Information");
     return;
-  }*/
+  }
 
 }
 
@@ -70,6 +82,6 @@ function signup(){
   else{
     alert("Wrong CODE!");
     return;
-  }*/
+  }
 
-}
+}*/
